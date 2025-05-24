@@ -1,0 +1,32 @@
+:root {
+  --color_blue_basic: #2565eb;
+  --color_blue_basic_light: #08b2d5;
+  --color_bg_white: #f0f9ff;
+  --color_white: #ffff;
+  --color_black: #000000;
+}
+
+.blue_basic {
+  color: var(--color_blue_basic);
+}
+.blue_basic_light {
+  color: var(--color_blue_basic_light);
+}
+.bg_white {
+  background-color: var(--color_bg_white);
+}
+.white {
+  color: var(--color_white);
+}
+.black {
+  color: var(--color_black);
+}
+
+/* gradient */
+.bg_blue_gradient_left {
+  background: linear-gradient(
+    to right,
+    #2565eb,
+    #08b2d5
+  ); /* azul escuro → azul claro */
+}
