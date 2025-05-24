@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block title %}Página Inicial - VetCare{% endblock %}
+
+{% block content %}
+<header id="header" class="header bg_blue_gradient_left">
+    <div class="header_logo">
+        <span id="iconLogo">
+            <i class="fa-solid fa-thumbs-up"></i>
+        </span>
+        <h1>VetCare</h1>
+    </div>
+    <div class="header_userOp">
+        <button class="header_button">
+            <a href="#">Novo Paciente</a>
+        </button>
+        <div class="header_user">
+            <!-- <img src="" alt="DR"> -->
+            <span>DR</span>
+        </div>
+    </div>
+</header>
+<main class="main_home">
+    <!-- NAVBAR -->
+    <nav class="main_nav">
+        <input type="text" placeholder="Buscar paciente por nome,ID ou responsável">
+    </nav>
+    <!-- CARDS -->
+    <section class="main_cardList">
+        <!-- CARD-1 -->
+        <article>
+            <!-- head -->
+            <header>
+                <span>
+                    <img src="" alt="">
+                    <h3>Rex</h3>
+                </span>
+                <span>
+                    ID: 001
+                </span>
+            </header>
+            <!-- body -->
+            <div>
+                <div>
+                    <span></span>
+                    <span>Normal</span>
+                </div>
+                <div>
+                    <label for="Espécie">
+                        <p>Espécie</p>
+                        <span>Canino</span>
+                    </label>
+                    <label for="Raça">
+                        <p>Raça</p>
+                        <span>Labrador</span>
+                    </label>
+                    <label for="Idade">
+                        <p>Idade</p>
+                        <span>3 anos</span>
+                    </label>
+                    <label for="Responsável">
+                        <p>Responsável</p>
+                        <span>João Silva</span>
+                    </label>
+                </div>
+            </div>
+        </article>
+        <!-- CARD-2 -->
+        <article>
+            <!-- head -->
+            <header>
+                <span>
+                    <img src="" alt="">
+                    <h3>Luna</h3>
+                </span>
+                <span>
+                    ID: 002
+                </span>
+            </header>
+            <!-- body -->
+            <div>
+                <div>
+                    <span></span>
+                    <span>Urgência</span>
+                </div>
+                <div>
+                    <label for="Espécie">
+                        <p>Espécie</p>
+                        <span>Canino</span>
+                    </label>
+                    <label for="Raça">
+                        <p>Raça</p>
+                        <span>Poodle</span>
+                    </label>
+                    <label for="Idade">
+                        <p>Idade</p>
+                        <span>5 anos</span>
+                    </label>
+                    <label for="Responsável">
+                        <p>Responsável</p>
+                        <span>Maria Oliveira</span>
+                    </label>
+                </div>
+            </div>
+        </article>
+        <!-- CARD-2 -->
+        <article>
+            <!-- head -->
+            <header>
+                <span>
+                    <img src="" alt="">
+                    <h3>Max</h3>
+                </span>
+                <span>
+                    ID: 003
+                </span>
+            </header>
+            <!-- body -->
+            <div>
+                <div>
+                    <span></span>
+                    <span>Emergência</span>
+                </div>
+                <div>
+                    <label for="Espécie">
+                        <p>Espécie</p>
+                        <span>Canino</span>
+                    </label>
+                    <label for="Raça">
+                        <p>Raça</p>
+                        <span>Bulldog</span>
+                    </label>
+                    <label for="Idade">
+                        <p>Idade</p>
+                        <span>2 anos</span>
+                    </label>
+                    <label for="Responsável">
+                        <p>Responsável</p>
+                        <span>Carlos Santos</span>
+                    </label>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+{% endblock %}
