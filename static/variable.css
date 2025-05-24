@@ -5,8 +5,9 @@
   --color_white: #ffff;
   --color_black: #000000;
   --color_blue: #1885e0;
-  --color_blue-dark: #1b50d2;
+  --color_blue_dark: #1b50d2;
   --color_gray: #a0a2ae;
+  --color_gray_dark: #6e6e6b;
   --color_gray_light: #e6e6e6;
 }
 
@@ -33,4 +34,7 @@
     #2565eb,
     #08b2d5
   ); /* azul escuro → azul claro */
+}
+.bg_blue_gradient_right {
+  background: linear-gradient(to right, #3683f5, #2565eb);
 }

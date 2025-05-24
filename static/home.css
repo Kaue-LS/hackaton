@@ -43,7 +43,7 @@
   justify-content: center;
   border-radius: 100%;
   overflow: hidden;
-  background: var(--color_blue-dark);
+  background: var(--color_blue_dark);
   color: var(--color_white);
 }
 .header .header_userOp .header_user span {
@@ -65,6 +65,7 @@
   padding: 15px 20px;
   margin-inline: auto;
   border: 1px solid var(--color_gray_light);
+  margin-bottom: 30px;
 }
 .main_home .main_nav input {
   font-size: 20px;
@@ -83,4 +84,76 @@
   top: 15px;
   font-size: 25px;
   color: var(--color_gray);
+}
+
+/* CARDLIST */
+.main_home .main_cardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.main_home .main_cardList article {
+  background: var(--color_white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 15px 33px -16px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 1px 15px 33px -16px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 1px 15px 33px -16px rgba(0, 0, 0, 0.51);
+}
+.main_home .main_cardList article header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+}
+
+.main_home .main_cardList article header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  color: var(--color_white);
+}
+.main_home .main_cardList article header .client > h3 span {
+  font-size: 22px;
+  font-weight: 600;
+}
+.main_home .main_cardList article header .client > i {
+  font-size: 20px;
+}
+.main_home .main_cardList article header .id {
+  background-color: var(--color_white);
+  color: var(--color_blue);
+  border-radius: 30px;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.main_home .main_cardList article .content {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color_gray_dark);
+  font-size: 16px;
+  font-weight: 400;
+}
+.main_home .main_cardList article .content .status {
+  display: inline-flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.main_home .main_cardList article .content .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main_home .main_cardList article .content .info label {
+  display: flex;
+  justify-content: space-between;
+}
+.main_home .main_cardList article .content .info label span {
+  color: var(--color_black);
+  font-weight: 600;
 }
