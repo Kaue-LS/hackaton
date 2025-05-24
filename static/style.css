@@ -130,3 +130,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* My css */
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.header {
+  padding: 0px 200px;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+button,
+input[type="text"] {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
