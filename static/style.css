@@ -156,3 +156,28 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+
+.desktop {
+  display: block !important;
+}
+
+.mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0px 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0px 20px;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+}

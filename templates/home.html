@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block title %}Página Inicial - VetCare{% endblock %}
-
+{%block script %}
+<script defer src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}
 {% block content %}
 <header id="header" class="header bg_blue_gradient_left">
     <div class="header_logo">
@@ -9,7 +11,7 @@
         </span>
         <h1>VetCare</h1>
     </div>
-    <div class="header_userOp">
+    <div class="header_userOp desktop">
         <button class="header_button">
             <a href="#">Novo Paciente</a>
         </button>
@@ -18,11 +20,14 @@
             <span>DR</span>
         </div>
     </div>
+    <div class="header_userOp mobile">
+        <i class="fa-solid fa-bars"></i>
+    </div>
 </header>
 <main class="main_home">
     <!-- NAVBAR -->
     <nav class="main_nav">
-        <input type="text" placeholder="Buscar paciente por nome,ID ou responsável">
+        <input id="searchBar" name="searchBar" type="text" placeholder="Buscar paciente por nome,ID ou responsável">
         <i class="fa-solid fa-magnifying-glass"></i>
     </nav>
     <!-- CARDS -->
