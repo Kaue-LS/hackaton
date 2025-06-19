@@ -137,7 +137,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   background-color: var(--color_bg_white);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .header {
   padding: 0px 200px;

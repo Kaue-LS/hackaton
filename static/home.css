@@ -157,44 +157,9 @@
   color: var(--color_black);
   font-weight: 600;
 }
-.sideBar_mobile {
-  position: fixed;
-  left: auto;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
-  max-width: 50vw;
-  z-index: 9999;
-  padding: 20px 0 0;
-  background-color: var(--color_bg_white);
-  box-shadow: 1px 15px 33px -16px rgba(0, 0, 0, 0.51);
-  -webkit-box-shadow: 1px 15px 33px -16px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 1px 15px 33px -16px rgba(0, 0, 0, 0.51);
-}
-.sideBar_mobile .menu-sideBar {
-  font-size: 20px;
-  color: var(--color_blue_dark);
-}
-.sideBar_mobile .navBar_header .header_userOp .header_user {
-  margin-left: auto;
-}
-.sideBar_mobile .navBar_header .header_userOp {
-  display: flex;
-  flex-direction: column;
-}
 
-.sideBar_mobile.close {
-  transform: translateX(200%); /* empurra para fora da tela */
-  visibility: hidden;
-  transition: 300ms ease-in-out;
-}
-.sideBar_mobile.open {
-  transform: translateX(100%);
-  visibility: visible;
-  width: 100%;
-  height: 100%;
-  transition: 300ms ease-in-out;
+.sideBar_mobile {
+  display: none;
 }
 @media screen and (max-width: 1024px) {
   .main_home {
@@ -243,5 +208,87 @@
   }
   .header .header_logo h1 {
     font-size: 24px;
+  }
+
+  .sideBar_mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0; /* CORRIGIDO */
+    width: 100%;
+    height: 100%;
+    max-width: 300px; /* Largura fixa */
+    padding: 20px 20px 0;
+    background-color: var(--color_bg_white);
+    box-shadow: 1px 15px 33px -16px rgba(0, 0, 0, 0.51);
+    z-index: 9999;
+    transform: translateX(-100%); /* sidebar começa fora da tela */
+    transition: transform 300ms ease-in-out;
+  }
+
+  .sideBar_mobile .menu-sideBar {
+    font-size: 20px;
+    color: var(--color_blue_dark);
+  }
+  .sideBar_mobile .navBar_header .header_userOp .header_user {
+    margin-left: auto;
+  }
+  .sideBar_mobile .navBar_header .header_userOp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sideBar_mobile.open {
+    transform: translateX(0); /* Mostra o sidebar fixado */
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    transition: 300ms ease-in-out;
+  }
+
+  .sideBar_mobile.close {
+    transform: translateX(-100%); /* Esconde o sidebar para fora da tela */
+    visibility: hidden;
+    transition: 300ms ease-in-out;
+  }
+
+  .sideBar_mobile_user {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    max-width: 100%;
+  }
+  .sideBar_mobile_user .header_user {
+    background-color: var(--color_blue_dark);
+    border-radius: 100%;
+    font-size: 15px;
+    padding: 13px 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sideBar_mobile_user .sideBar_menu_itens {
+    display: flex;
+    flex-direction: column;
+  }
+  .sideBar_mobile_user .menu-sideBar i {
+    font-size: 18px;
+    background-color: var(--color_blue);
+    color: var(--color_white);
+    border-radius: 100%;
+    padding: 10px 12px;
+  }
+  .sideBar_menu_itens {
+    margin-top: 10px;
+  }
+  .sideBar_menu_itens .header_button {
+    background-color: var(--color_blue);
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    border: none;
   }
 }
